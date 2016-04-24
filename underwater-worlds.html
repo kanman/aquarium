@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<head>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js">
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Lato:400,400italic,700,700italic,900,900italic,300:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+  
+  <script>
+  
+  $(document).ready(function)() {
+  $('#')
+  }
+  
+  </script>
+  
+  
+  
+<style type="text/css">
+
+html {
+background: url("http://www.andrewgale.com.au/Images/underwater-background.jpg") center center fixed;
+background-size: cover;
+}
+
+
+
+header {
+    width: 40em;
+    height: 15em;
+
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 62%;
+
+}
+
+
+h1 {
+color: #fff;
+position: absolute;
+font-size: 4vw;
+font-family: 'Lato', sans-serif;
+font-weight: 700;
+width: auto;
+text-shadow: 1px 1px #000;
+
+}
+
+h2 {
+color: #fff;
+position: absolute;
+font-size: 4vw;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+width: auto;
+text-shadow: 1px 1px #000;
+}
+
+nav {
+width: 39%;
+height: 15%;
+position: fixed;
+left: 58%;
+top: 43%;
+display: none;
+}
+
+ul {
+list-style-type: none;
+position: absolute;
+left: 0;
+top: 2em;
+
+}
+
+li {
+width: 12em;
+height: 3.5em;
+outline: 1.5px solid #fff;
+float: left;
+margin-right: 1em;
+text-align: center;
+color: #fff;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+line-height: 47px;
+margin-bottom: 1.5em;
+overflow: hidden;
+cursor: pointer;
+box-shadow: 1px 1px #999999;
+text-shadow: 1px 1px #999999;
+}
+
+
+
+a:hover li {
+transition: width 2s, height 4s, transform 2s;/*transition width and height*/
+-webkit-transition: width 2s height 4s -webkit-transform 2s; /*transition width*/
+background: #000;
+width: 14em;
+height: 5.5em;
+transition-timing-function: linear;/*timing of the transition*/
+-webkit-transition-timing-function: linear; /*timing of the transition webkit*/
+transition-delay: 2s;/*delays the transition*/
+-webkit-transition-delay: 2s; /*delays the transition*/
+
+}
+
+
+.squid {
+position: absolute;
+margin: -20% 0 0 8%; 
+animation-name: squid;
+animation-duration: 6s;
+animation-timing-function: linear;
+animation-delay: 3s;
+
+-webkit-animation-name: squid;
+-webkit-animation-duration: 6.5s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 3s;
+}
+
+
+@keyframes squid {
+from {margin: 10% 0 0 10%;}
+to
+{margin: 25% 0 0 12%;}
+}
+
+
+@-webkit-keyframes squid {
+from {margin: 10% 0 0 10%;}
+to
+{margin: 25% 0 0 12%;}
+}
+
+
+.staticsquid {
+position: absolute;
+margin: 25% 0 0 12%;
+animation-name: staticsquid;
+animation-duration: 0.25s;
+animation-delay: 9.3s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+
+-webkit-animation-name: staticsquid;
+-webkit-animation-duration: 0.25s;
+-webkit-animation-delay: 9.3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-fill-mode: forwards;
+
+
+opacity: 0;
+}
+
+@keyframes staticsquid {
+from {opacity: 0;}
+to
+{opacity: 1;}
+
+}
+
+
+@-webkit-keyframes staticsquid {
+from {opacity: 0;}
+to
+{opacity: 1;}
+
+}
+
+
+.seaturtle {
+position: absolute;
+margin: 25% 0 0 -25%;
+animation-name: turtle;
+animation-duration: 10s;
+animation-delay: 11s;
+animation-timing-function: linear; 
+
+-webkit-animation-name: turtle;
+-webkit-animation-duration: 10s;
+-webkit-animation-delay: 11s;
+-webkit-animation-timing-function: linear; 
+
+}
+
+@keyframes turtle {
+from {margin: 20% 0 0 35%;}
+to
+{margin: 40% 0 0 85%;}
+
+}
+
+
+@-webkit-keyframes turtle {
+from {margin: 20% 0 0 35%;}
+to
+{margin: 40% 0 0 85%;}
+
+}
+
+
+.staticturtle {
+position: absolute;
+margin: 40% 0 0 85%;
+animation-name: staticturtle;
+animation-delay: 21s;
+animation-duration: 0.1s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+
+-webkit-animation-name: staticturtle;
+-webkit-animation-delay: 21s;
+-webkit-animation-duration: 0.1s;
+-webkit-animation-timing-function: linear;
+animation-fill-mode: forwards;
+
+
+opacity: 0;
+
+}
+
+@keyframes staticturtle {
+from {opacity: 0;} 
+
+to
+
+{opacity: 1;}
+
+}
+
+@-webkit-keyframes staticturtle {
+from {opacity: 0;} 
+
+to
+
+{opacity: 1;}
+
+}
+
+
+
+.fishschool {
+position: absolute;
+margin: 2% 0 0 -20%;
+animation-name: fishschool;
+animation-delay: 4s;
+animation-duration: 38s;
+width: 400px;
+animation-fill-mode: forwards;
+}
+
+
+@keyframes fishschool {
+from {margin: 2% 0 0 -20%;}
+to {margin:   2% 0 0 110%; }
+}
+
+
+#third {
+position: relative;
+top: 50px;
+}
+
+
+.crab {
+position: absolute;
+margin: -20% 0 0 60%;
+animation-name: crab;
+animation-duration: 10s;
+animation-delay: 18s; 
+animation-timing-function: linear;  
+}
+
+
+@keyframes crab {
+0% {margin: 42% 0 0 60%;}
+25% {margin: 42% 0 0 50%;}
+
+50% {margin: 42% 0 0 50%;}
+
+100% {margin: 42% 0 0 40%;}
+
+}
+
+
+.mermaid {
+position: absolute;
+margin: -30% 0 0 40%;
+animation-name: mermaid;
+animation-duration: 8s;
+animation-delay: 24s;
+animation-timing-function: linear;  
+animation-fill-mode: forwards;
+animation-direction:alternate;
+}
+
+@keyframes mermaid {
+0% { margin: 14% 0 0 40%;}
+25% { margin: 11% 0 0 38%;}
+50% { margin: 8% 0 0 39%;}
+75% { margin: 4% 0 0 38%;}
+100% { margin: 0% 0 0 39%;}  
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Underwater</h1><br/><br/><br/><br/>
+
+
+
+<h2>Worlds</h1>
+
+
+
+</header>
+
+
+<section class="squid">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/squid-moving.gif" alt="squid">
+
+</section>
+
+
+<figure class="staticsquid">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/squid-moving-static.png" alt="squid">
+
+</figure>
+
+<section class="seaturtle">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/animated-turtle-image-0059.gif" alt="seaturtle">
+
+</section>
+
+<figure class="staticturtle">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/animated-turtle-static.png" alt="sea turtle" >
+
+</figure>
+
+<section class="fishschool">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/animated-fish-image-0049.gif">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/animated-fish-image-0049.gif">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/animated-fish-image-0049.gif"  id="third">
+
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/animated-fish-image-0049.gif">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/animated-fish-image-0049.gif">
+
+
+
+</section>
+
+
+<section class="crab">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/animated-crab-image-0024.gif" alt="crab">
+
+
+</section>
+
+<section class="mermaid">
+
+<img src="file://localhost/Users/andrewg/Desktop/%20Web%20Training/CSS3/Underwater-World/ling-mermaid.png" alt="Ling Mermaid">
+
+
+
+</section>
+
+
+</body>
+
+
+
+</html>
